@@ -5,26 +5,23 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-public class SquareImageViewW extends ImageView {
-    public SquareImageViewW(Context context) {
+public class SquareImageViewW extends androidx.appcompat.widget.AppCompatImageView {
+
+
+    public SquareImageViewW(@NonNull Context context) {
         super(context);
     }
 
-    public SquareImageViewW(Context context, @Nullable AttributeSet attrs) {
+    public SquareImageViewW(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public SquareImageViewW(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public SquareImageViewW(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public SquareImageViewW(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-
     }
 
     @Override
