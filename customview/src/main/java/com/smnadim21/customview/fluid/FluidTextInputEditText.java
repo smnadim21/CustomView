@@ -25,7 +25,7 @@ public class FluidTextInputEditText extends TextInputEditText {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        super.setTextSize(((getHeight() / getTextSizeFactor()) / (getMaxLines() == Integer.MAX_VALUE ? 1 : getMaxLines())));
+        setTextSize(((getHeight() / getTextSizeFactor()) / (getMaxLines() == Integer.MAX_VALUE ? 1 : getMaxLines())));
 
     }
 
