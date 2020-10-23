@@ -25,15 +25,14 @@ public class FluidTextView extends androidx.appcompat.widget.AppCompatTextView {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        Log.e("abc", "size>" + ((getHeight() / getTextSizeFactor()) / (getMaxLines() == Integer.MAX_VALUE ? 1 : getMaxLines())));
-        setTextSize(((getHeight() / getTextSizeFactor()) / (getMaxLines() == Integer.MAX_VALUE ? 1 : getMaxLines())));
-
+        if (getHeight() > 0) {
+            this.setTextSize(((getHeight() / getTextSizeFactor())));
+        }
     }
-
 
     float getTextSizeFactor() {
         int width = Resources.getSystem().getDisplayMetrics().widthPixels;
         int height = Resources.getSystem().getDisplayMetrics().heightPixels;
-        return ((float) height / width) * 2.2f;
+        return ((float) height / width) * 2f * getLineCount();
     }
 }

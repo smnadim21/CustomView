@@ -3,6 +3,7 @@ package com.smnadim21.customview.fluid;
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.AttributeSet;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,13 +26,14 @@ public class FluidTextInputEditText extends TextInputEditText {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        setTextSize(((getHeight() / getTextSizeFactor()) / (getMaxLines() == Integer.MAX_VALUE ? 1 : getMaxLines())));
-
+        if (getHeight() > 0) {
+            this.setTextSize(((getHeight() / getTextSizeFactor())));
+        }
     }
 
     float getTextSizeFactor() {
         int width = Resources.getSystem().getDisplayMetrics().widthPixels;
         int height = Resources.getSystem().getDisplayMetrics().heightPixels;
-        return ((float) height / width) * 2.5f;
+        return ((float) height / width) * 2f * getLineCount();
     }
 }

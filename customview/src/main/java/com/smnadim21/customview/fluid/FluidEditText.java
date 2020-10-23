@@ -25,13 +25,14 @@ public class FluidEditText extends androidx.appcompat.widget.AppCompatEditText {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        setTextSize(((getHeight() / getTextSizeFactor()) / (getMaxLines() == Integer.MAX_VALUE ? 1 : getMaxLines())));
+        if (getHeight() > 0) {
+            this.setTextSize(((getHeight() / getTextSizeFactor())));
+        }
     }
-
 
     float getTextSizeFactor() {
         int width = Resources.getSystem().getDisplayMetrics().widthPixels;
         int height = Resources.getSystem().getDisplayMetrics().heightPixels;
-        return ((float) height / width) * 2.5f;
+        return ((float) height / width) * 2.5f * getLineCount();
     }
 }
