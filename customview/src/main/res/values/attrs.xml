@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ComperetiveLayoutH">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ComperativeLayoutW">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+</resources>
