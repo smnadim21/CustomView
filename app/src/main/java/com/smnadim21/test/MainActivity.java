@@ -1,4 +1,4 @@
-package com.smnadim21.customview;
+package com.smnadim21.test;
 
 import android.os.Bundle;
 import android.view.View;

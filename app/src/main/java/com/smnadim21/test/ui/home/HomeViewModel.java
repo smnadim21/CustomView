@@ -1,4 +1,4 @@
-package com.smnadim21.customview.ui.home;
+package com.smnadim21.test.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

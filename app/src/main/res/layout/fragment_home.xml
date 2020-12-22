@@ -5,15 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    android:orientation="vertical"
+    tools:context="com.smnadim21.test.ui.home.HomeFragment">
 
 
-    <com.smnadim21.customview.layouts.ComperetiveLayoutH
+    <com.smnadim21.customview.layouts.ComperativeLayoutH
+        android:background="#c00"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        nad:ratio=".4">
+        android:layout_height="50dp"
+        nad:ratio="1.1">
 
-    </com.smnadim21.customview.layouts.ComperetiveLayoutH>
+    </com.smnadim21.customview.layouts.ComperativeLayoutH>
+
+    <com.smnadim21.customview.layouts.ComperativeLayoutW
+        android:background="#0d0"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        nad:ratio="1.1">
+
+    </com.smnadim21.customview.layouts.ComperativeLayoutW>
 
     <TextView
         android:id="@+id/text_home"

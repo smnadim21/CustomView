@@ -1,4 +1,4 @@
-package com.smnadim21.customview.ui.slideshow;
+package com.smnadim21.test.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

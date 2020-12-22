@@ -1,4 +1,4 @@
-package com.smnadim21.customview.ui.slideshow;
+package com.smnadim21.test.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.smnadim21.customview.R;
+import com.smnadim21.test.R;
 
 public class SlideshowFragment extends Fragment {
 
