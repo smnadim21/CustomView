@@ -22,6 +22,6 @@ Step 1. AAdd this jitpack URL to your build.gradle() (Project:xx) at the end of 
 Step 2. Add the dependency    
 
     dependencies {
-                implementation 'com.github.smnadim21:CustomView:0.0.7-beta2'
+                implementation 'com.github.smnadim21:CustomView:0.0.8'
       }
     
