@@ -1,6 +1,6 @@
 # CustomView
 
-![Jitpack - Version](https://img.shields.io/jitpack/v/github/smnadim21/CustomView?color=green)
+[![](https://jitpack.io/v/smnadim21/CustomView.svg)](https://jitpack.io/#smnadim21/CustomView)
 ![PyPI - Status](https://img.shields.io/pypi/status/django)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
